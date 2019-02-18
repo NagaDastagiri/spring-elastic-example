@@ -52,6 +52,7 @@ public class StudentController {
     @DeleteMapping("/student/{id}")
     public Boolean delete(@PathVariable Integer id){
         repo.deleteById(id);
+        System.out.println("Deleted");
         return true;
     }
 
